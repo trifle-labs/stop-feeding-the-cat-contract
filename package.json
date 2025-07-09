@@ -1,0 +1,57 @@
+{
+  "name": "@trifle/stop-feeding-the-cat",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "contracts",
+    "deployments"
+  ],
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "test:v2": "hardhat test test/StopFeedingTheCatV2.test.ts",
+    "coverage": "hardhat coverage",
+    "coverage:v1": "hardhat coverage --testfiles 'test/StopFeedingTheCat.test.ts'",
+    "coverage:v2": "hardhat coverage --testfiles 'test/StopFeedingTheCatV2.test.ts'",
+    "deploy:local": "hardhat run scripts/deploy.ts --network localhost",
+    "deploy:baseSepolia": "hardhat run scripts/deploy.ts --network baseSepolia",
+    "deploy:base": "hardhat run scripts/deploy.ts --network base",
+    "verify:baseSepolia": "hardhat run scripts/verify.ts --network baseSepolia",
+    "verify:base": "hardhat run scripts/verify.ts --network base",
+    "prepare-upgrade:local": "hardhat run scripts/prepare-upgrade.ts --network localhost",
+    "prepare-upgrade:baseSepolia": "hardhat run scripts/prepare-upgrade.ts --network baseSepolia",
+    "prepare-upgrade:base": "hardhat run scripts/prepare-upgrade.ts --network base",
+    "upgrade:local": "hardhat run scripts/upgrade.ts --network localhost",
+    "upgrade:baseSepolia": "hardhat run scripts/upgrade.ts --network baseSepolia",
+    "upgrade:base": "hardhat run scripts/upgrade.ts --network base",
+    "export": "hardhat run scripts/export-artifacts.ts",
+    "build": "npm run compile && npm run export",
+    "chain": "hardhat node"
+  },
+  "keywords": [
+    "solidity",
+    "smart-contract",
+    "game",
+    "nft",
+    "erc1155"
+  ],
+  "author": "Trifle Labs",
+  "license": "MIT",
+  "description": "Stop Feeding The Cat - A blockchain game where players compete to be the last one to feed the cat",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^6.0.0",
+    "@nomicfoundation/hardhat-verify": "^2.0.14",
+    "@openzeppelin/contracts": "^5.3.0",
+    "@openzeppelin/contracts-upgradeable": "^5.3.0",
+    "@openzeppelin/hardhat-upgrades": "^3.9.1",
+    "@types/node": "^24.0.12",
+    "dotenv": "^17.1.0",
+    "ethers": "^6.15.0",
+    "hardhat": "^2.25.0",
+    "solidity-coverage": "^0.8.16",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}

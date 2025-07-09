@@ -1,0 +1,28 @@
+node_modules
+.env
+typechain-types
+
+# Hardhat files
+cache
+artifacts
+
+# Build output
+dist
+
+# Coverage files
+coverage/
+coverage.json
+.coverage_*
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS files
+.DS_Store
+Thumbs.db
