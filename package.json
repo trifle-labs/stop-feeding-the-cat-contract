@@ -41,6 +41,10 @@
   "author": "Trifle Labs",
   "license": "MIT",
   "description": "Stop Feeding The Cat - A blockchain game where players compete to be the last one to feed the cat",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^6.0.0",
     "@nomicfoundation/hardhat-verify": "^2.0.14",

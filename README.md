@@ -1,3 +1,6 @@
+[![codecov](https://codecov.io/gh/trifle-labs/stop-feeding-the-cat-contract/branch/main/graph/badge.svg)](https://codecov.io/gh/trifle-labs/stop-feeding-the-cat-contract)
+[![Build Status](https://github.com/trifle-labs/stop-feeding-the-cat-contract/workflows/Test/badge.svg)](https://github.com/trifle-labs/stop-feeding-the-cat-contract/actions)
+
 # Stop Feeding The Cat
 
 A blockchain-based game where players compete to be the last one to feed the cat and win the prize pool.
