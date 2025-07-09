@@ -1,5 +1,5 @@
-[![codecov](https://codecov.io/gh/trifle-labs/stop-feeding-the-cat-contract/branch/main/graph/badge.svg)](https://codecov.io/gh/trifle-labs/stop-feeding-the-cat-contract)
-[![Build Status](https://github.com/trifle-labs/stop-feeding-the-cat-contract/workflows/Test/badge.svg)](https://github.com/trifle-labs/stop-feeding-the-cat-contract/actions)
+[![codecov](https://codecov.io/gh/trifle-labs/stop-feeding-the-cat-contract/graph/badge.svg)](https://codecov.io/gh/trifle-labs/stop-feeding-the-cat-contract)
+[![Test Suite](https://github.com/trifle-labs/stop-feeding-the-cat-contract/actions/workflows/test.yml/badge.svg)](https://github.com/trifle-labs/stop-feeding-the-cat-contract/actions/workflows/test.yml)
 
 # Stop Feeding The Cat
 

@@ -36,12 +36,14 @@ jobs:
         run: npm run coverage
 
       - name: Upload coverage to Codecov
-        uses: codecov/codecov-action@v4
+        uses: codecov/codecov-action@v5
         with:
+          token: ${{ secrets.CODECOV_TOKEN }}
           file: ./coverage/lcov.info
           flags: unittests
           name: codecov-umbrella
           fail_ci_if_error: false
+          slug: trifle-labs/stop-feeding-the-cat-contract
 
       - name: Upload coverage reports to Coveralls
         uses: coverallsapp/github-action@v2
