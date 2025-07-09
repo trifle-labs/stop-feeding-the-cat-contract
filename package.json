@@ -1,6 +1,6 @@
 {
   "name": "@trifle/stop-feeding-the-cat",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
@@ -28,7 +28,8 @@
     "upgrade:base": "hardhat run scripts/upgrade.ts --network base",
     "export": "hardhat run scripts/export-artifacts.ts",
     "build": "npm run compile && npm run export",
-    "chain": "hardhat node"
+    "chain": "hardhat node",
+    "patch": "npm version patch && npm publish && git push"
   },
   "keywords": [
     "solidity",
